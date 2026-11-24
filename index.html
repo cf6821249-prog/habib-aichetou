@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohamed Habiboullah & Aichetou Ba · Invitation de mariage</title>
+<meta name="theme-color" content="#0f2f28">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Amiri:wght@400;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f2f28;--bg2:#17433a;--card:#1b4a40;--gold:#d4b06a;--ivory:#f6efe0;--mute:#b9c9bf;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ivory);font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;line-height:1.6;overflow-x:hidden}
+.ar{font-family:'Amiri','Traditional Arabic',serif;direction:rtl}
+.cap{font-family:'Cinzel',Georgia,serif;letter-spacing:.28em;font-size:.72rem;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{font-weight:400;margin:0}
+section{padding:84px 22px;max-width:880px;margin:auto;text-align:center}
+.gold{color:var(--gold)}
+.orn{display:flex;align-items:center;gap:14px;justify-content:center;margin:18px auto;color:var(--gold);max-width:260px}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn::after{transform:scaleX(-1)}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:center;gap:22px;padding:calc(14px + env(safe-area-inset-top,0px)) 12px 12px;background:rgba(15,47,40,.88);backdrop-filter:blur(8px);border-bottom:1px solid rgba(212,176,106,.25);font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase}
+nav a{color:var(--ivory);text-decoration:none;opacity:.85}nav a:hover{color:var(--gold)}
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:none;background:radial-gradient(circle at 50% 30%,var(--bg2),var(--bg) 70%);position:relative}
+#hero::before{content:"";position:absolute;inset:18px;border:1px solid rgba(212,176,106,.45);pointer-events:none}
+#hero::after{content:"";position:absolute;inset:26px;border:1px solid rgba(212,176,106,.18);pointer-events:none}
+.bis{font-size:1.9rem;color:var(--gold);margin-bottom:26px}
+.names{font-size:clamp(2.6rem,10vw,5rem);line-height:1.05;font-style:italic}
+.names span{display:block;font-family:'Cinzel',serif;font-style:normal;font-size:.9rem;letter-spacing:.4em;color:var(--gold);margin:10px 0}
+.date-big{margin-top:24px;font-size:1.5rem}
+.date-big b{font-weight:600;color:var(--gold)}
+.pill{display:inline-block;margin-top:30px;padding:11px 26px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;transition:.3s}
+.pill:hover{background:var(--gold);color:var(--bg)}
+.cal{display:inline-grid;grid-template-columns:auto auto;border:1px solid var(--gold);margin-top:26px}
+.cal div{padding:18px 30px}.cal div:first-child{border-right:1px solid var(--gold);background:var(--gold);color:var(--bg);font-weight:600}
+.cal .n{font-size:3.4rem;line-height:1;font-family:'Cinzel',serif}
+.cards{display:grid;gap:22px;margin-top:38px}
+@media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid rgba(212,176,106,.4);padding:34px 24px;position:relative}
+.card::before{content:"";position:absolute;inset:7px;border:1px solid rgba(212,176,106,.2);pointer-events:none}
+.card h3{font-size:2rem;font-style:italic;margin:10px 0 4px}
+.card p{color:var(--mute);margin:8px 0}
+.ico{font-size:2.1rem;color:var(--gold)}
+#compte-a-rebours{background:var(--bg2);max-width:none}
+.cd{display:flex;gap:12px;justify-content:center;margin:34px 0 20px;flex-wrap:wrap}
+.cd div{width:92px;padding:18px 0;border:1px solid var(--gold);background:var(--bg)}
+.cd b{display:block;font-family:'Cinzel',serif;font-size:2.2rem;font-weight:400;color:var(--gold)}
+.cd small{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.q{font-style:italic;color:var(--mute);max-width:520px;margin:20px auto 0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px}
+.btns a{padding:9px 16px;font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.18em;border:1px solid var(--gold);color:var(--ivory);text-decoration:none;text-transform:uppercase}
+.btns a:first-child{background:var(--gold);color:var(--bg)}
+.btns a:hover{background:var(--ivory);color:var(--bg)}
+footer{padding:70px 22px calc(90px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--mute)}
+footer .names{font-size:2.4rem;color:var(--ivory)}
+/* enveloppe */
+#env{position:fixed;inset:0;z-index:50;background:radial-gradient(circle at 50% 40%,#1b4a40,#0a211c);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity 1s,visibility 1s}
+#env.open{opacity:0;visibility:hidden}
+#env.open .seal{transform:scale(1.6) rotate(20deg);opacity:0}
+.seal{width:124px;height:124px;border-radius:50%;border:none;cursor:pointer;margin:34px 0 22px;background:radial-gradient(circle at 35% 30%,#ecd08e,#b8913f 60%,#8a6a28);color:#0f2f28;font-family:'Cinzel',serif;font-size:1.5rem;box-shadow:0 0 0 6px rgba(212,176,106,.25),0 10px 40px rgba(0,0,0,.5);animation:pulse 2.2s infinite;transition:.9s}
+@keyframes pulse{50%{box-shadow:0 0 0 16px rgba(212,176,106,.1),0 10px 40px rgba(0,0,0,.5)}}
+#mute{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:var(--bg);color:var(--gold);font-size:1.2rem;cursor:pointer;display:none}
+.rv{opacity:0;transform:translateY(24px);transition:1s}.rv.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div id="env">
+  <div class="ar gold" style="font-size:1.8rem">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+  <div class="cap" style="margin-top:22px">Vous êtes invités</div>
+  <button class="seal" id="seal" aria-label="Ouvrir l’invitation">M&nbsp;&amp;&nbsp;A</button>
+  <div class="cap">Touchez le sceau pour ouvrir</div>
+</div>
+
+<nav><a href="#hero">Accueil</a><a href="#date">Date</a><a href="#programme">Programme</a><a href="#compte-a-rebours">Décompte</a><a href="#lieu">Lieu</a></nav>
+<button id="mute" aria-label="Son">♪</button>
+<audio id="aud" src="audio.mp3" preload="auto"></audio>
+
+<section id="hero">
+  <div class="bis ar">بسم الله الرحمن الرحيم</div>
+  <div class="cap">Ensemble, avec la bénédiction de nos familles</div>
+  <div class="orn">❖</div>
+  <h1 class="names">Mohamed Habiboullah<span>&amp;</span>Aichetou Ba</h1>
+  <div class="date-big">Vendredi <b>4 décembre 2026</b></div>
+  <a class="pill" href="#programme">Découvrir</a>
+</section>
+
+<section id="date" class="rv">
+  <div class="cap">Réservez la date</div>
+  <h2 style="font-size:2.4rem;font-style:italic;margin-top:8px">Vous êtes conviés à notre mariage</h2>
+  <div class="orn">✦</div>
+  <div class="cal"><div><div class="n">04</div>Décembre</div><div><div class="n">2026</div>Vendredi</div></div>
+  <p style="max-width:540px;margin:30px auto 0;color:var(--mute)">Par la grâce de Dieu, nous avons l’immense joie de vous inviter à partager avec nous le début de notre vie à deux. Votre présence et vos prières nous seront précieuses.</p>
+</section>
+
+<section id="programme" class="rv">
+  <div class="cap">Au programme</div>
+  <h2 style="font-size:2.4rem;font-style:italic;margin-top:8px">Une journée, deux moments</h2>
+  <div class="cards">
+    <div class="card"><div class="ico">☪</div><div class="cap" style="margin-top:8px">Vendredi 4 décembre</div><h3>À la mosquée</h3><p>Célébration religieuse de notre union, entourés de nos familles et de nos proches.</p><p class="gold">Mosquée Thierno Ndiaye Barro</p></div>
+    <div class="card"><div class="ico">❀</div><div class="cap" style="margin-top:8px">Vendredi 4 décembre</div><h3>La célébration</h3><p>Un moment de fête pour célébrer ensemble, dans la joie et la convivialité.</p><p class="gold">Hamam Paris</p></div>
+  </div>
+</section>
+
+<section id="compte-a-rebours" class="rv">
+  <div class="cap">Les grands jours approchent</div>
+  <h2 style="font-size:2.4rem;font-style:italic;margin-top:8px">Compte à rebours</h2>
+  <div class="cd" id="cd"><div><b id="d">00</b><small>Jours</small></div><div><b id="h">00</b><small>Heures</small></div><div><b id="m">00</b><small>Minutes</small></div><div><b id="s">00</b><small>Secondes</small></div></div>
+  <p class="q">« Chaque instant nous rapproche du jour où nous dirons oui, entourés de ceux que nous aimons. »</p>
+</section>
+
+<section id="lieu" class="rv">
+  <div class="cap">Comment s’y rendre</div>
+  <h2 style="font-size:2.4rem;font-style:italic;margin-top:8px">Les lieux</h2>
+  <div class="cards">
+    <div class="card"><div class="cap">Mosquée · 4 décembre</div><h3>Thierno Ndiaye Barro</h3><p>Mosquée</p>
+      <div class="btns"><a href="https://www.google.com/maps?q=20.9226444,-17.0520159" target="_blank" rel="noopener">Google Maps</a><a href="https://waze.com/ul?ll=20.9226444,-17.0520159&navigate=yes" target="_blank" rel="noopener">Waze</a><a href="https://yango.com/adj/yango?end-lat=20.9226444&end-lon=-17.0520159" target="_blank" rel="noopener">Yango</a></div></div>
+    <div class="card"><div class="cap">Célébration · 4 décembre</div><h3>Hamam Paris</h3><p>Lieu de la fête</p>
+      <div class="btns"><a href="https://www.google.com/maps?q=20.9397097,-17.04364" target="_blank" rel="noopener">Google Maps</a><a href="https://waze.com/ul?ll=20.9397097,-17.04364&navigate=yes" target="_blank" rel="noopener">Waze</a><a href="https://yango.com/adj/yango?end-lat=20.9397097&end-lon=-17.04364" target="_blank" rel="noopener">Yango</a></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="orn">❖</div>
+  <div class="cap">Merci</div>
+  <p style="max-width:520px;margin:14px auto">Votre présence, vos prières et vos pensées rendront ce jour encore plus précieux. Merci de partager avec nous ce moment de joie et de bénédiction.</p>
+  <p>Avec toute notre affection,</p>
+  <div class="names">Mohamed &amp; Aichetou</div>
+</footer>
+
+<script>
+(function(){
+var a=document.getElementById('aud'),env=document.getElementById('env'),mb=document.getElementById('mute'),START=12;
+a.loop=false;
+a.addEventListener('ended',function(){a.currentTime=START;a.play().catch(function(){})});
+function start(){
+  var go=function(){try{a.currentTime=START}catch(e){}a.play().catch(function(){})};
+  if(a.readyState>0)go();else{a.addEventListener('loadedmetadata',go,{once:true});a.load()}
+}
+document.getElementById('seal').addEventListener('click',function(){
+  env.classList.add('open');mb.style.display='block';start();
+  setTimeout(function(){env.style.display='none'},1100);
+});
+mb.addEventListener('click',function(){
+  if(a.paused){a.play();mb.textContent='♪';mb.style.opacity=1}else{a.pause();mb.style.opacity=.5}
+});
+var T=Date.UTC(2026,11,4,0,0,0);
+function p(n){return String(n).padStart(2,'0')}
+function tick(){var s=Math.max(0,Math.floor((T-Date.now())/1000));
+ d.textContent=p(Math.floor(s/86400));h.textContent=p(Math.floor(s%86400/3600));m.textContent=p(Math.floor(s%3600/60));document.getElementById('s').textContent=p(s%60)}
+var d=document.getElementById('d'),h=document.getElementById('h'),m=document.getElementById('m');
+tick();setInterval(tick,1000);
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(x){io.observe(x)});
+})();
+</script>
+</body>
+</html>
