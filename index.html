@@ -4,116 +4,168 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mohamed Habiboullah & Aichetou Ba · Invitation de mariage</title>
-<meta name="theme-color" content="#0f2f28">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Amiri:wght@400;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#5a1226">
+<meta name="description" content="Mohamed Habiboullah & Aichetou Ba vous invitent à leur mariage le vendredi 4 décembre 2026.">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Amiri:wght@400;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0f2f28;--bg2:#17433a;--card:#1b4a40;--gold:#d4b06a;--ivory:#f6efe0;--mute:#b9c9bf;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
+:root{--ivory:#fbf4ef;--blush:#f4dcd9;--rose:#c27b86;--wine:#6b1830;--wine2:#4a0f20;--gold:#c9a26a;--ink:#4a2a33;color-scheme:light}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ivory);font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;line-height:1.6;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;line-height:1.65;overflow-x:hidden}
+body.lock{overflow:hidden;height:100vh}
+.script{font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400}
 .ar{font-family:'Amiri','Traditional Arabic',serif;direction:rtl}
-.cap{font-family:'Cinzel',Georgia,serif;letter-spacing:.28em;font-size:.72rem;text-transform:uppercase;color:var(--gold)}
-h1,h2,h3{font-weight:400;margin:0}
-section{padding:84px 22px;max-width:880px;margin:auto;text-align:center}
-.gold{color:var(--gold)}
-.orn{display:flex;align-items:center;gap:14px;justify-content:center;margin:18px auto;color:var(--gold);max-width:260px}
-.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
-.orn::after{transform:scaleX(-1)}
-nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:center;gap:22px;padding:calc(14px + env(safe-area-inset-top,0px)) 12px 12px;background:rgba(15,47,40,.88);backdrop-filter:blur(8px);border-bottom:1px solid rgba(212,176,106,.25);font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase}
-nav a{color:var(--ivory);text-decoration:none;opacity:.85}nav a:hover{color:var(--gold)}
-#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;max-width:none;background:radial-gradient(circle at 50% 30%,var(--bg2),var(--bg) 70%);position:relative}
-#hero::before{content:"";position:absolute;inset:18px;border:1px solid rgba(212,176,106,.45);pointer-events:none}
-#hero::after{content:"";position:absolute;inset:26px;border:1px solid rgba(212,176,106,.18);pointer-events:none}
-.bis{font-size:1.9rem;color:var(--gold);margin-bottom:26px}
-.names{font-size:clamp(2.6rem,10vw,5rem);line-height:1.05;font-style:italic}
-.names span{display:block;font-family:'Cinzel',serif;font-style:normal;font-size:.9rem;letter-spacing:.4em;color:var(--gold);margin:10px 0}
-.date-big{margin-top:24px;font-size:1.5rem}
-.date-big b{font-weight:600;color:var(--gold)}
-.pill{display:inline-block;margin-top:30px;padding:11px 26px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;transition:.3s}
-.pill:hover{background:var(--gold);color:var(--bg)}
-.cal{display:inline-grid;grid-template-columns:auto auto;border:1px solid var(--gold);margin-top:26px}
-.cal div{padding:18px 30px}.cal div:first-child{border-right:1px solid var(--gold);background:var(--gold);color:var(--bg);font-weight:600}
-.cal .n{font-size:3.4rem;line-height:1;font-family:'Cinzel',serif}
-.cards{display:grid;gap:22px;margin-top:38px}
+.cap{font-family:'Cinzel',Georgia,serif;letter-spacing:.28em;font-size:.7rem;text-transform:uppercase;color:var(--rose)}
+h2{font-weight:400;margin:6px 0 0;font-size:2.5rem;font-style:italic;color:var(--wine)}
+section{padding:90px 22px;max-width:900px;margin:auto;text-align:center;position:relative;z-index:2}
+.heart{display:block;width:26px;height:26px;margin:18px auto;fill:var(--rose);animation:beat 1.6s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.25)}30%{transform:scale(1)}45%{transform:scale(1.18)}}
+.line{display:flex;align-items:center;gap:12px;max-width:260px;margin:14px auto;color:var(--gold)}
+.line::before,.line::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.line::after{transform:scaleX(-1)}
+
+/* ===== ENVELOPE ===== */
+#intro{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;background:radial-gradient(ellipse at 50% 35%,#7d2038 0%,#4a0f20 60%,#2e0813 100%);transition:opacity 1.2s ease,visibility 1.2s;overflow:hidden}
+#intro.done{opacity:0;visibility:hidden}
+#intro .bis{color:var(--gold);font-size:1.7rem;text-align:center}
+.scene{perspective:1400px;transition:transform 1.3s cubic-bezier(.6,0,.2,1),opacity 1s;margin-top:60px}
+.scene.zoom{transform:scale(1.7) translateY(10%);opacity:0}
+.env{--w:min(86vw,440px);position:relative;width:var(--w);height:calc(var(--w)*.68);font-size:calc(var(--w)/22);transform-style:preserve-3d;animation:float 4s ease-in-out infinite}
+.env.go{animation:none}
+@keyframes float{50%{transform:translateY(-8px)}}
+.env>*{position:absolute}
+.back{inset:0;background:linear-gradient(160deg,#e9bfc0,#d9a3a8);border-radius:5px;box-shadow:0 40px 70px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.12)}
+.letter{left:5%;right:5%;top:7%;height:88%;z-index:2;background:linear-gradient(#fffdf9,#fbf1e8);border:1px solid #ead8c6;border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--wine);transition:transform 1.2s cubic-bezier(.5,0,.2,1) .9s;box-shadow:0 -4px 20px rgba(0,0,0,.12)}
+.letter .cap{font-size:.55em}.letter .nm{font-size:2.6em;line-height:1.05;margin:.1em 0}.letter .dt{font-size:.9em;font-style:italic}
+.env.open .letter{transform:translateY(-72%);z-index:5}
+.front{inset:0;z-index:3;border-radius:5px;background:linear-gradient(200deg,#f1cfcf,#e2b1b5);clip-path:polygon(0 0,50% 54%,100% 0,100% 100%,0 100%)}
+.front::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.18),transparent 30%,transparent 70%,rgba(0,0,0,.06))}
+.flap{left:0;top:0;width:100%;height:55%;z-index:4;transform-origin:top;background:linear-gradient(180deg,#e8bcbe,#f3d3d2);clip-path:polygon(0 0,100% 0,50% 100%);transition:transform .9s cubic-bezier(.5,0,.2,1)}
+.env.open .flap{transform:rotateX(180deg);z-index:1;transition:transform .9s cubic-bezier(.5,0,.2,1),z-index 0s .35s;background:linear-gradient(0deg,#d79ea4,#e8bcbe)}
+
+/* ===== WAX SEAL ===== */
+.seal{left:50%;top:55%;width:6.2em;height:6.2em;margin:-3.1em 0 0 -3.1em;z-index:6;border:0;padding:0;cursor:pointer;background:none;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45));animation:pulse 2.4s ease-in-out infinite;-webkit-tap-highlight-color:transparent}
+.wax{position:absolute;inset:0;border-radius:46% 54% 50% 50%/54% 46% 54% 46%;background:radial-gradient(circle at 32% 28%,#d3445f 0%,#a41d3a 35%,#721328 70%,#4f0b1b 100%);box-shadow:inset 0 -6px 10px rgba(0,0,0,.35),inset 0 5px 8px rgba(255,150,170,.35)}
+.wax::before{content:"";position:absolute;inset:.55em;border-radius:50%;border:2px solid rgba(255,170,185,.4);box-shadow:inset 0 2px 5px rgba(0,0,0,.45),0 1px 1px rgba(255,170,185,.3);background:radial-gradient(circle at 40% 35%,#8f1a33,#6a1126)}
+.wax::after{content:"M & A";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Great Vibes',cursive;font-size:1.55em;color:#f5c9d0;text-shadow:0 -1px 1px rgba(0,0,0,.6),0 1px 1px rgba(255,190,200,.4)}
+.drip{position:absolute;background:radial-gradient(circle at 35% 30%,#c23850,#7a152b);border-radius:50%;box-shadow:inset 0 -3px 5px rgba(0,0,0,.3)}
+.d1{width:1.3em;height:1.1em;left:-.3em;bottom:.5em}.d2{width:1em;height:1.4em;right:-.25em;bottom:.9em;border-radius:50% 50% 60% 40%}.d3{width:.8em;height:.9em;left:1.2em;bottom:-.3em}
+@keyframes pulse{50%{transform:scale(1.07)}}
+.seal.break{animation:snap .7s forwards}
+@keyframes snap{0%{transform:scale(1)}20%{transform:scale(.9) rotate(-5deg)}40%{transform:scale(1.1) rotate(5deg)}100%{transform:scale(1.5) translateY(40px) rotate(18deg);opacity:0}}
+.shard{position:absolute;left:50%;top:55%;width:.7em;height:.7em;background:#8a1730;border-radius:30% 70% 50% 50%;z-index:7;opacity:0;pointer-events:none}
+.go .shard{animation:shard .9s ease-out forwards}
+@keyframes shard{0%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(var(--r))}}
+.hint{color:#e8c9cc;font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;animation:blink 2s infinite;transition:opacity .4s}
+@keyframes blink{50%{opacity:.4}}
+
+/* ===== SITE ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:center;gap:20px;padding:calc(14px + env(safe-area-inset-top,0px)) 10px 12px;background:rgba(251,244,239,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,162,106,.35);font-family:'Cinzel',serif;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase}
+nav a{color:var(--wine);text-decoration:none}nav a:hover{color:var(--rose)}
+#hero{min-height:100vh;max-width:none;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 20%,#fff 0%,var(--blush) 55%,#ecc4c4 100%);padding-top:90px}
+.arch{position:relative;width:min(90vw,470px);padding:70px 26px 56px;border:1.5px solid var(--gold);border-radius:999px 999px 14px 14px;background:rgba(255,255,255,.5);box-shadow:0 30px 60px rgba(107,24,48,.15)}
+.arch::before{content:"";position:absolute;inset:9px;border:1px solid rgba(194,123,134,.6);border-radius:999px 999px 8px 8px;pointer-events:none}
+.bis2{color:var(--wine);font-size:1.7rem}
+.names{font-size:clamp(3rem,13vw,4.8rem);line-height:1;color:var(--wine);margin:10px 0}
+.names small{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--rose);margin:4px 0}
+.date-big{font-size:1.45rem;color:var(--wine)}.date-big b{color:var(--rose);font-weight:600}
+.pill{display:inline-block;margin-top:26px;padding:12px 28px;background:var(--wine);color:#fff;text-decoration:none;font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;border-radius:40px;transition:.3s;box-shadow:0 8px 20px rgba(107,24,48,.3)}
+.pill:hover{background:var(--rose);transform:translateY(-3px)}
+.cal{display:inline-flex;border-radius:10px;overflow:hidden;box-shadow:0 16px 36px rgba(107,24,48,.2);margin-top:26px}
+.cal div{padding:20px 34px;background:#fff}.cal div:first-child{background:var(--wine);color:#fff}
+.cal .n{font-family:'Cinzel',serif;font-size:3.5rem;line-height:1}
+.cal small{font-family:'Cinzel',serif;letter-spacing:.2em;font-size:.7rem;text-transform:uppercase}
+.cards{display:grid;gap:24px;margin-top:40px}
 @media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
-.card{background:var(--card);border:1px solid rgba(212,176,106,.4);padding:34px 24px;position:relative}
-.card::before{content:"";position:absolute;inset:7px;border:1px solid rgba(212,176,106,.2);pointer-events:none}
-.card h3{font-size:2rem;font-style:italic;margin:10px 0 4px}
-.card p{color:var(--mute);margin:8px 0}
-.ico{font-size:2.1rem;color:var(--gold)}
-#compte-a-rebours{background:var(--bg2);max-width:none}
-.cd{display:flex;gap:12px;justify-content:center;margin:34px 0 20px;flex-wrap:wrap}
-.cd div{width:92px;padding:18px 0;border:1px solid var(--gold);background:var(--bg)}
-.cd b{display:block;font-family:'Cinzel',serif;font-size:2.2rem;font-weight:400;color:var(--gold)}
-.cd small{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
-.q{font-style:italic;color:var(--mute);max-width:520px;margin:20px auto 0}
+.card{background:#fff;border-radius:14px;padding:36px 24px;border:1px solid rgba(201,162,106,.5);box-shadow:0 16px 40px rgba(107,24,48,.1);position:relative;transition:.4s}
+.card:hover{transform:translateY(-6px)}
+.card::before{content:"";position:absolute;inset:8px;border:1px dashed rgba(194,123,134,.45);border-radius:9px;pointer-events:none}
+.card h3{font-size:2.1rem;font-style:italic;font-weight:400;color:var(--wine);margin:8px 0 4px}
+.card p{margin:8px 0;color:#7a5a62}
+.ico{width:54px;height:54px;margin:0 auto;border-radius:50%;background:var(--blush);display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:var(--wine)}
+#cdown{max-width:none;background:linear-gradient(160deg,var(--wine),var(--wine2));color:#fff}
+#cdown h2{color:#fff}#cdown .cap{color:var(--gold)}
+.cd{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:34px 0 18px}
+.cd div{width:88px;padding:18px 0;border:1px solid rgba(201,162,106,.6);background:rgba(255,255,255,.07);border-radius:10px}
+.cd b{display:block;font-family:'Cinzel',serif;font-size:2.2rem;font-weight:400;color:#f7dcc0}
+.cd small{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:#e8c9cc}
+.q{font-style:italic;color:#e8c9cc;max-width:520px;margin:22px auto 0}
 .btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px}
-.btns a{padding:9px 16px;font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.18em;border:1px solid var(--gold);color:var(--ivory);text-decoration:none;text-transform:uppercase}
-.btns a:first-child{background:var(--gold);color:var(--bg)}
-.btns a:hover{background:var(--ivory);color:var(--bg)}
-footer{padding:70px 22px calc(90px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--mute)}
-footer .names{font-size:2.4rem;color:var(--ivory)}
-/* enveloppe */
-#env{position:fixed;inset:0;z-index:50;background:radial-gradient(circle at 50% 40%,#1b4a40,#0a211c);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity 1s,visibility 1s}
-#env.open{opacity:0;visibility:hidden}
-#env.open .seal{transform:scale(1.6) rotate(20deg);opacity:0}
-.seal{width:124px;height:124px;border-radius:50%;border:none;cursor:pointer;margin:34px 0 22px;background:radial-gradient(circle at 35% 30%,#ecd08e,#b8913f 60%,#8a6a28);color:#0f2f28;font-family:'Cinzel',serif;font-size:1.5rem;box-shadow:0 0 0 6px rgba(212,176,106,.25),0 10px 40px rgba(0,0,0,.5);animation:pulse 2.2s infinite;transition:.9s}
-@keyframes pulse{50%{box-shadow:0 0 0 16px rgba(212,176,106,.1),0 10px 40px rgba(0,0,0,.5)}}
-#mute{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:var(--bg);color:var(--gold);font-size:1.2rem;cursor:pointer;display:none}
-.rv{opacity:0;transform:translateY(24px);transition:1s}.rv.in{opacity:1;transform:none}
+.btns a{padding:10px 18px;font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.18em;border:1px solid var(--wine);color:var(--wine);text-decoration:none;text-transform:uppercase;border-radius:30px;transition:.3s}
+.btns a:first-child,.btns a:hover{background:var(--wine);color:#fff}
+footer{padding:80px 22px 110px;text-align:center;background:var(--blush);position:relative;z-index:2}
+footer .names{font-size:3.2rem}
+footer p{max-width:520px;margin:12px auto}
+#snd{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;width:48px;height:48px;border-radius:50%;border:0;background:var(--wine);color:#fff;font-size:1.2rem;cursor:pointer;display:none;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+#snd.on::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid var(--rose);animation:ring 1.8s infinite}
+@keyframes ring{from{transform:scale(.9);opacity:1}to{transform:scale(1.4);opacity:0}}
+.petal{position:fixed;top:-5vh;z-index:3;pointer-events:none;border-radius:150% 0 150% 0;opacity:.8;animation:fall linear infinite}
+@keyframes fall{from{transform:translate3d(0,-8vh,0) rotate(0)}to{transform:translate3d(var(--dx),112vh,0) rotate(600deg)}}
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1.1s,transform 1.1s}.rv.in{opacity:1;transform:none}
+.rv .card:nth-child(2){transition-delay:.25s}
 </style>
 </head>
-<body>
-<div id="env">
-  <div class="ar gold" style="font-size:1.8rem">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
-  <div class="cap" style="margin-top:22px">Vous êtes invités</div>
-  <button class="seal" id="seal" aria-label="Ouvrir l’invitation">M&nbsp;&amp;&nbsp;A</button>
-  <div class="cap">Touchez le sceau pour ouvrir</div>
+<body class="lock">
+
+<div id="intro">
+  <div class="bis ar">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+  <div class="scene" id="scene">
+    <div class="env" id="env">
+      <div class="back"></div>
+      <div class="letter"><div class="cap">Vous êtes invités</div><div class="nm script">Mohamed &amp; Aichetou</div><div class="dt">Vendredi 4 décembre 2026</div></div>
+      <div class="front"></div>
+      <div class="flap"></div>
+      <button class="seal" id="seal" aria-label="Ouvrir l’invitation"><span class="wax"></span><span class="drip d1"></span><span class="drip d2"></span><span class="drip d3"></span></button>
+      <i class="shard" style="--x:-90px;--y:-60px;--r:200deg"></i><i class="shard" style="--x:80px;--y:-80px;--r:-160deg"></i><i class="shard" style="--x:-60px;--y:70px;--r:120deg"></i><i class="shard" style="--x:100px;--y:50px;--r:-220deg"></i><i class="shard" style="--x:10px;--y:-100px;--r:90deg"></i>
+    </div>
+  </div>
+  <div class="hint" id="hint">Touchez le sceau pour ouvrir</div>
 </div>
 
-<nav><a href="#hero">Accueil</a><a href="#date">Date</a><a href="#programme">Programme</a><a href="#compte-a-rebours">Décompte</a><a href="#lieu">Lieu</a></nav>
-<button id="mute" aria-label="Son">♪</button>
+<nav><a href="#hero">Accueil</a><a href="#date">Date</a><a href="#programme">Programme</a><a href="#cdown">Décompte</a><a href="#lieu">Lieu</a></nav>
+<button id="snd" aria-label="Musique">♪</button>
 <audio id="aud" src="audio.mp3" preload="auto"></audio>
 
 <section id="hero">
-  <div class="bis ar">بسم الله الرحمن الرحيم</div>
-  <div class="cap">Ensemble, avec la bénédiction de nos familles</div>
-  <div class="orn">❖</div>
-  <h1 class="names">Mohamed Habiboullah<span>&amp;</span>Aichetou Ba</h1>
-  <div class="date-big">Vendredi <b>4 décembre 2026</b></div>
-  <a class="pill" href="#programme">Découvrir</a>
+  <div class="arch">
+    <div class="bis2 ar">بسم الله الرحمن الرحيم</div>
+    <div class="cap" style="margin-top:14px">Avec la bénédiction de nos familles</div>
+    <svg class="heart" viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9C1 8.6 3 5 6.4 5c2 0 3.4 1.1 4.2 2.4h.8C12.2 6.1 13.6 5 15.6 5 19 5 21 8.6 19.3 12 17 16.4 12 21 12 21z"/></svg>
+    <h1 class="names script" style="font-weight:400">Mohamed Habiboullah<small>&amp;</small>Aichetou Ba</h1>
+    <div class="date-big">Vendredi <b>4 décembre 2026</b></div>
+    <a class="pill" href="#programme">Découvrir</a>
+  </div>
 </section>
 
 <section id="date" class="rv">
   <div class="cap">Réservez la date</div>
-  <h2 style="font-size:2.4rem;font-style:italic;margin-top:8px">Vous êtes conviés à notre mariage</h2>
-  <div class="orn">✦</div>
-  <div class="cal"><div><div class="n">04</div>Décembre</div><div><div class="n">2026</div>Vendredi</div></div>
-  <p style="max-width:540px;margin:30px auto 0;color:var(--mute)">Par la grâce de Dieu, nous avons l’immense joie de vous inviter à partager avec nous le début de notre vie à deux. Votre présence et vos prières nous seront précieuses.</p>
+  <h2>Vous êtes conviés à notre mariage</h2>
+  <div class="line">❦</div>
+  <div class="cal"><div><div class="n">04</div><small>Décembre</small></div><div><div class="n">2026</div><small>Vendredi</small></div></div>
+  <p style="max-width:540px;margin:30px auto 0;color:#7a5a62">Par la grâce de Dieu, nous avons l’immense joie de vous inviter à partager avec nous le début de notre vie à deux. Votre présence et vos prières nous seront précieuses.</p>
 </section>
 
 <section id="programme" class="rv">
   <div class="cap">Au programme</div>
-  <h2 style="font-size:2.4rem;font-style:italic;margin-top:8px">Une journée, deux moments</h2>
+  <h2>Une journée, deux moments</h2>
   <div class="cards">
-    <div class="card"><div class="ico">☪</div><div class="cap" style="margin-top:8px">Vendredi 4 décembre</div><h3>À la mosquée</h3><p>Célébration religieuse de notre union, entourés de nos familles et de nos proches.</p><p class="gold">Mosquée Thierno Ndiaye Barro</p></div>
-    <div class="card"><div class="ico">❀</div><div class="cap" style="margin-top:8px">Vendredi 4 décembre</div><h3>La célébration</h3><p>Un moment de fête pour célébrer ensemble, dans la joie et la convivialité.</p><p class="gold">Hamam Paris</p></div>
+    <div class="card"><div class="ico">☪</div><div class="cap" style="margin-top:12px">Vendredi 4 décembre</div><h3>À la mosquée</h3><p>Célébration religieuse de notre union, entourés de nos familles et de nos proches.</p><p style="color:var(--wine);font-weight:600">Mosquée Thierno Ndiaye Barro</p></div>
+    <div class="card"><div class="ico">❀</div><div class="cap" style="margin-top:12px">Vendredi 4 décembre</div><h3>La célébration</h3><p>Un moment de fête pour célébrer ensemble, dans la joie et la convivialité.</p><p style="color:var(--wine);font-weight:600">Hamam Paris</p></div>
   </div>
 </section>
 
-<section id="compte-a-rebours" class="rv">
-  <div class="cap">Les grands jours approchent</div>
-  <h2 style="font-size:2.4rem;font-style:italic;margin-top:8px">Compte à rebours</h2>
-  <div class="cd" id="cd"><div><b id="d">00</b><small>Jours</small></div><div><b id="h">00</b><small>Heures</small></div><div><b id="m">00</b><small>Minutes</small></div><div><b id="s">00</b><small>Secondes</small></div></div>
+<section id="cdown" class="rv">
+  <div class="cap">Le grand jour approche</div>
+  <h2>Compte à rebours</h2>
+  <div class="cd"><div><b id="d">00</b><small>Jours</small></div><div><b id="h">00</b><small>Heures</small></div><div><b id="m">00</b><small>Minutes</small></div><div><b id="s">00</b><small>Secondes</small></div></div>
   <p class="q">« Chaque instant nous rapproche du jour où nous dirons oui, entourés de ceux que nous aimons. »</p>
 </section>
 
 <section id="lieu" class="rv">
   <div class="cap">Comment s’y rendre</div>
-  <h2 style="font-size:2.4rem;font-style:italic;margin-top:8px">Les lieux</h2>
+  <h2>Les lieux</h2>
   <div class="cards">
-    <div class="card"><div class="cap">Mosquée · 4 décembre</div><h3>Thierno Ndiaye Barro</h3><p>Mosquée</p>
+    <div class="card"><div class="cap">Mosquée · 4 décembre</div><h3>Thierno Ndiaye Barro</h3><p>Célébration religieuse</p>
       <div class="btns"><a href="https://www.google.com/maps?q=20.9226444,-17.0520159" target="_blank" rel="noopener">Google Maps</a><a href="https://waze.com/ul?ll=20.9226444,-17.0520159&navigate=yes" target="_blank" rel="noopener">Waze</a><a href="https://yango.com/adj/yango?end-lat=20.9226444&end-lon=-17.0520159" target="_blank" rel="noopener">Yango</a></div></div>
     <div class="card"><div class="cap">Célébration · 4 décembre</div><h3>Hamam Paris</h3><p>Lieu de la fête</p>
       <div class="btns"><a href="https://www.google.com/maps?q=20.9397097,-17.04364" target="_blank" rel="noopener">Google Maps</a><a href="https://waze.com/ul?ll=20.9397097,-17.04364&navigate=yes" target="_blank" rel="noopener">Waze</a><a href="https://yango.com/adj/yango?end-lat=20.9397097&end-lon=-17.04364" target="_blank" rel="noopener">Yango</a></div></div>
@@ -121,34 +173,37 @@ footer .names{font-size:2.4rem;color:var(--ivory)}
 </section>
 
 <footer>
-  <div class="orn">❖</div>
+  <svg class="heart" viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9C1 8.6 3 5 6.4 5c2 0 3.4 1.1 4.2 2.4h.8C12.2 6.1 13.6 5 15.6 5 19 5 21 8.6 19.3 12 17 16.4 12 21 12 21z"/></svg>
   <div class="cap">Merci</div>
-  <p style="max-width:520px;margin:14px auto">Votre présence, vos prières et vos pensées rendront ce jour encore plus précieux. Merci de partager avec nous ce moment de joie et de bénédiction.</p>
+  <p>Votre présence, vos prières et vos pensées rendront ce jour encore plus précieux. Merci de partager avec nous ce moment de joie et de bénédiction.</p>
   <p>Avec toute notre affection,</p>
-  <div class="names">Mohamed &amp; Aichetou</div>
+  <div class="names script">Mohamed &amp; Aichetou</div>
 </footer>
 
 <script>
 (function(){
-var a=document.getElementById('aud'),env=document.getElementById('env'),mb=document.getElementById('mute'),START=12;
-a.loop=false;
+var $=function(i){return document.getElementById(i)},a=$('aud'),START=12,snd=$('snd');
 a.addEventListener('ended',function(){a.currentTime=START;a.play().catch(function(){})});
-function start(){
-  var go=function(){try{a.currentTime=START}catch(e){}a.play().catch(function(){})};
-  if(a.readyState>0)go();else{a.addEventListener('loadedmetadata',go,{once:true});a.load()}
-}
-document.getElementById('seal').addEventListener('click',function(){
-  env.classList.add('open');mb.style.display='block';start();
-  setTimeout(function(){env.style.display='none'},1100);
+function play(){var go=function(){try{a.currentTime=START}catch(e){}a.play().catch(function(){})};
+ if(a.readyState>0)go();else{a.addEventListener('loadedmetadata',go,{once:true});a.load()}}
+function petals(){var c=['#f4b6c2','#e8929f','#f9d3d8','#c9a26a','#d9707f'];
+ for(var i=0;i<20;i++){var p=document.createElement('i');p.className='petal';var s=8+Math.random()*10;
+  p.style.cssText='left:'+Math.random()*100+'vw;width:'+s+'px;height:'+s*1.3+'px;background:'+c[i%5]+';animation-duration:'+(9+Math.random()*9)+'s;animation-delay:'+(-Math.random()*14)+'s;--dx:'+(Math.random()*160-80)+'px';
+  document.body.appendChild(p)}}
+$('seal').addEventListener('click',function(){
+ var s=this;if(s.dataset.k)return;s.dataset.k=1;
+ $('env').classList.add('go');s.classList.add('break');$('hint').style.opacity=0;
+ play();
+ setTimeout(function(){$('env').classList.add('open')},500);
+ setTimeout(function(){$('scene').classList.add('zoom')},2900);
+ setTimeout(function(){$('intro').classList.add('done');document.body.classList.remove('lock');snd.style.display='block';snd.className='on';petals()},3200);
+ setTimeout(function(){$('intro').style.display='none'},4600);
 });
-mb.addEventListener('click',function(){
-  if(a.paused){a.play();mb.textContent='♪';mb.style.opacity=1}else{a.pause();mb.style.opacity=.5}
-});
+snd.addEventListener('click',function(){if(a.paused){a.play();snd.className='on';snd.style.opacity=1}else{a.pause();snd.className='';snd.style.opacity=.6}});
 var T=Date.UTC(2026,11,4,0,0,0);
 function p(n){return String(n).padStart(2,'0')}
 function tick(){var s=Math.max(0,Math.floor((T-Date.now())/1000));
- d.textContent=p(Math.floor(s/86400));h.textContent=p(Math.floor(s%86400/3600));m.textContent=p(Math.floor(s%3600/60));document.getElementById('s').textContent=p(s%60)}
-var d=document.getElementById('d'),h=document.getElementById('h'),m=document.getElementById('m');
+ $('d').textContent=p(Math.floor(s/86400));$('h').textContent=p(Math.floor(s%86400/3600));$('m').textContent=p(Math.floor(s%3600/60));$('s').textContent=p(s%60)}
 tick();setInterval(tick,1000);
 var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.15});
 document.querySelectorAll('.rv').forEach(function(x){io.observe(x)});
