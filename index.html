@@ -16,7 +16,7 @@ body.lock{overflow:hidden;height:100vh}
 .script{font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400}
 .ar{font-family:'Amiri','Traditional Arabic',serif;direction:rtl}
 .cap{font-family:'Cinzel',Georgia,serif;letter-spacing:.28em;font-size:.7rem;text-transform:uppercase;color:var(--rose)}
-h2{font-weight:400;margin:6px 0 0;font-size:2.5rem;font-style:italic;color:var(--wine)}
+h2{font-weight:400;margin:6px 0 0;font-size:clamp(1.9rem,8.5vw,2.5rem);line-height:1.25;font-style:italic;color:var(--wine)}
 section{padding:90px 22px;max-width:900px;margin:auto;text-align:center;position:relative;z-index:2}
 .heart{display:block;width:26px;height:26px;margin:18px auto;fill:var(--rose);animation:beat 1.6s infinite}
 @keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.25)}30%{transform:scale(1)}45%{transform:scale(1.18)}}
@@ -71,9 +71,9 @@ nav a{color:var(--wine);text-decoration:none}nav a:hover{color:var(--rose)}
 .date-big{font-size:1.45rem;color:var(--wine)}.date-big b{color:var(--rose);font-weight:600}
 .pill{display:inline-block;margin-top:26px;padding:12px 28px;background:var(--wine);color:#fff;text-decoration:none;font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;border-radius:40px;transition:.3s;box-shadow:0 8px 20px rgba(107,24,48,.3)}
 .pill:hover{background:var(--rose);transform:translateY(-3px)}
-.cal{display:inline-flex;border-radius:10px;overflow:hidden;box-shadow:0 16px 36px rgba(107,24,48,.2);margin-top:26px}
-.cal div{padding:20px 34px;background:#fff}.cal div:first-child{background:var(--wine);color:#fff}
-.cal .n{font-family:'Cinzel',serif;font-size:3.5rem;line-height:1}
+.cal{display:inline-flex;max-width:100%;border-radius:10px;overflow:hidden;box-shadow:0 16px 36px rgba(107,24,48,.2);margin-top:26px}
+.cal>div{padding:20px clamp(18px,7vw,34px);background:#fff;text-align:center}.cal>div:first-child{background:var(--wine);color:#fff}
+.cal .n{font-family:'Cinzel',serif;font-size:clamp(2.3rem,11vw,3.5rem);line-height:1;margin-bottom:6px;background:none;padding:0}
 .cal small{font-family:'Cinzel',serif;letter-spacing:.2em;font-size:.7rem;text-transform:uppercase}
 .cards{display:grid;gap:24px;margin-top:40px}
 @media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
